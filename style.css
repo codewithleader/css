@@ -6,7 +6,13 @@
 div {
   width: 200px;
   padding: 20px;
-  border: 10px solid red;
-  margin: 10px;
+  border: 10px solid rgb(253, 45, 45);
+  /* margin: 10px; */
+  margin: 20px; /* Aumentamos a 20px para que se vea el outline por completo */
   box-sizing: border-box;
+
+  outline: 10px solid rgb(96, 96, 255);
+  outline-offset: 10px; /* Espacio entre el border y el outline */
+
+  /* El outline está en el margin asi que si no hay mas espacio de margen se sale del body  o solapa otros elementos */
 }
