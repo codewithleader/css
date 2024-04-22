@@ -1,18 +1,78 @@
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; /* 10px = 1rem */
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  /* font-family: var(--main-font); */
+  font-size: 18px;
+  font-size: 1.8rem;
+  line-height: 2;
+}
+
+:root {
+  --primary: #0038b8;
+  --secondary: #5c78b8;
+  --success: #5880dc;
+  --warning: #ffcc00;
+  --danger: #ff4136;
+  --info: #3c67ca;
+  --gray: #808080;
+  --dark: #001649;
+  --light: #004dff
+}
+
 * {
+  border: 1px solid #ff0000;
   margin: 0;
   padding: 0;
 }
 
-div {
-  width: 200px;
-  padding: 20px;
-  border: 10px solid rgb(253, 45, 45);
-  /* margin: 10px; */
-  margin: 20px; /* Aumentamos a 20px para que se vea el outline por completo */
-  box-sizing: border-box;
+ul {
+  list-style: none;
+}
 
-  outline: 10px solid rgb(96, 96, 255);
-  outline-offset: 10px; /* Espacio entre el border y el outline */
+a {
+  all: unset;
+}
 
-  /* El outline está en el margin asi que si no hay mas espacio de margen se sale del body  o solapa otros elementos */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo--container {
+  display: flex;
+  align-items: center;
+}
+
+.navbar--main {
+  display: flex;
+  align-items: center;
+  border: 1px solid green;
+}
+
+.navbar--main ul {
+  display: flex;
+  gap: 2rem;
+  padding: 1rem;
+  border: 1px solid blue;
+}
+
+.navbar--main li {
+  padding: 1rem;
+}
+
+.navbar--main a {
+  align-items: center;
 }

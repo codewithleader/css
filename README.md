@@ -33,3 +33,53 @@
    - Una vez que alcanza esa posición, se vuelve "pegajoso" y se comporta como `fixed`.
    - Puede ser útil para encabezados que se mantienen visibles mientras se desplaza la página.
    - Ejemplo: Usa `position: sticky;` cuando quieras que un elemento se mantenga en una posición fija en relación con su contenedor hasta que se alcance un punto de desplazamiento específico, momento en el que se vuelve "pegajoso".
+
+# La propiedad display en CSS
+
+- Se utiliza para controlar cómo se muestra un elemento en el diseño de la página. Determina el tipo de caja de formato utilizado para un elemento y cómo se trata en el modelo de diseño de caja.
+
+- Algunos de los valores que admite la propiedad display junto con una breve descripción de cada uno:
+
+- `block`:
+  Los elementos de bloque (<div>, <p>, <h1> - <h6>, etc.) ocupan todo el ancho disponible por defecto y comienzan en una nueva línea.
+  Ejemplo: <div>, <p>
+
+- `inline`:
+  Los elementos en línea (<span>, <a>, <strong>, etc.) ocupan solo el espacio necesario y no comienzan en una nueva línea.
+  Ejemplo: <span>, <a>
+
+- `inline-block`:
+  Combina las características de los elementos de bloque y los elementos en línea. Ocupa solo el espacio necesario y permite ajustar el ancho y el alto.
+  Ejemplo: Elementos de tipo button
+
+- `none`:
+  Oculta el elemento y no ocupa espacio en el diseño de la página.
+  Ejemplo: Útil para ocultar temporalmente elementos de forma dinámica con JavaScript.
+
+- `table`:
+  Hace que el elemento se comporte como un elemento de tabla.
+  Ejemplo: <table>
+
+- `table-cell`:
+  Hace que el elemento se comporte como una celda de tabla.
+  Ejemplo: <td>, <th>
+
+- `table-row`:
+  Hace que el elemento se comporte como una fila de tabla.
+  Ejemplo: <tr>
+
+- `flex`:
+  Establece un contenedor flexible que puede expandirse y contraerse según el espacio disponible.
+  Ejemplo: Contenedores que requieren un diseño flexible, como barras laterales y encabezados de navegación.
+
+- `grid`:
+  Establece un contenedor de tipo cuadrícula que organiza sus elementos hijos en filas y columnas.
+  Ejemplo: Diseños de cuadrícula complejos.
+
+- `inline-flex`:
+  Similar a flex, pero se comporta como un elemento en línea.
+  Ejemplo: Se puede utilizar en línea dentro de un párrafo o en una lista.
+
+- `inline-grid`:
+  Similar a grid, pero se comporta como un elemento en línea.
+  Ejemplo: Se puede utilizar en línea dentro de un párrafo o en una lista.
